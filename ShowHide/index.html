@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Show And Hide</title>
+</head>
+<body>
+
+    <input type = "password" id ="pwd"><br>
+    <input type="checkbox" id="ck"> show password
+    <script>
+        var password = document.getElementById("pwd");
+        var checkbox =document.getElementById("ck");
+
+       
+
+        checkbox.addEventListener("click",function(){
+            var pwdVal = password.value;
+
+            if(password.type =="password"){
+                password.type ="text";
+            }else{
+                password.type="password"}
+                    
+             
+            
+        })
+    
+
+    </script>
+</body>
+</html>
